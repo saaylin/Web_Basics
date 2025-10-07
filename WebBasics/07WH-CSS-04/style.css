@@ -11,7 +11,9 @@
  
 }
  
-.greens { display: flex; margin-left: auto; }
+.greens { 
+  display: flex; 
+  margin-left: auto; }
  
 .box {
   border: 2px solid black;
