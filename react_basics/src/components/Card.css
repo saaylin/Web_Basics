@@ -1,0 +1,24 @@
+.card {
+  width: 250px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  overflow: hidden;
+  text-align: center;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  background-color: #fff;
+}
+
+
+.card-info {
+  padding: 15px;
+}
+
+.card-info h2 {
+  margin: 10px 0 5px;
+  font-size: 20px;
+}
+
+.card-info p {
+  margin: 0;
+  color: #777;
+}
