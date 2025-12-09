@@ -1,6 +1,19 @@
 import React from 'react';
-import './Button.css';
 
-export const Button: React.FC = () => {
-  return <button className="custom-button">Sendar</button>;
+interface ButtonProps {
+  label: string;
+  onClick?: () => void;
+}
+
+const Button: React.FC<ButtonProps> = ({ label, onClick }) => {
+  return (
+    <button
+      className="bg-green-600 text-white px-4 py-2 rounded hover:bg-green-700 transition"
+      onClick={onClick}
+    >
+      {label}
+    </button>
+  );
 };
+
+export default Button;

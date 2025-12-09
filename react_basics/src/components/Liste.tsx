@@ -1,16 +1,16 @@
 import React from 'react';
-import './List.css';
+import ListItem from './ListItem';
 
 const items = ['Coffee', 'Tea', 'Beer'];
 
-export const List: React.FC = () => {
+const List: React.FC = () => {
   return (
-    <ul className="list">
-      {items.map((item) => (
-        <li key={item}>
-          <button className="list-button">{item}</button>
-        </li>
+    <ul className="w-40">
+      {items.map((item, index) => (
+        <ListItem key={index} label={item} />
       ))}
     </ul>
   );
 };
+
+export default List;

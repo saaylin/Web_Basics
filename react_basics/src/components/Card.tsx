@@ -1,18 +1,23 @@
 import React from 'react';
-import './Card.css';
 
-export const Card: React.FC = () => {
+interface CardProps {
+  name:string;
+  title:string; 
+  imageUrl:string;
+}
+
+const Card: React.FC<CardProps> = ({ name, title, imageUrl }) => {
   return (
-    <div className="card">
+    <div className="bg-white shadow-md rounded p-4 flex flex-col items-center text-center w-64">
       <img
-        src="https://www.w3schools.com/howto/img_avatar.png"
-        alt="Avatar"
-        className="avatar"
+        src={imageUrl || 'https://via.placeholder.com/100'}
+        alt="Person"
+        className="w-24 h-24 rounded-full mb-4"
       />
-      <div className="card-info">
-        <h2>John Doe</h2>
-        <p>Architect & Engineer</p>
-      </div>
+      <h2 className="text-lg font-bold">{name}</h2>
+      <p className="text-gray-600">{title}</p>
     </div>
   );
 };
+
+export default Card;
