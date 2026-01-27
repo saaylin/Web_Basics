@@ -3,9 +3,9 @@ import reactLogo from './assets/react.svg';
 import viteLogo from '/vite.svg';
 import './App.css';
 
-import Button from './components/Button';
-import Card from './components/Card';
-import ListItem from './components/ListItem';
+import Button from './components/05_react/Button';
+import Card from './components/05_react/Card';
+import ListItem from './components/05_react/ListItem';
 
 function App() {
 
