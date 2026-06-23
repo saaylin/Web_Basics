@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="de">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Customize</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1>⚙️ Auto anpassen</h1>
+
+    <img id="carImage" src="" alt="Auto" />
+
+    <label>Farbe</label>
+    <select id="color">
+      <option value="red" data-price="1000">Rot</option>
+      <option value="green" data-price="1200">Grün</option>
+      <option value="black" data-price="1500">Schwarz</option>
+    </select>
+
+    <label>Felgen</label>
+    <select id="wheels">
+      <option value="500">Standard</option>
+      <option value="1500">Sport Felgen</option>
+    </select>
+
+    <button onclick="saveCustom()">Speichern</button>
+    <a href="index.html"><button>⬅ Zurück</button></a>
+
+    <script src="customize.js"></script>
+  </body>
+</html>
